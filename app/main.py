@@ -23,8 +23,6 @@ BACKEND_ENV = Path(__file__).resolve().parents[1] / ".env"
 load_dotenv(dotenv_path=BACKEND_ENV)
 
 # ===== Adapters =====
-from app.adapters.easyocr_adapter import EasyOCRAdapter
-from app.adapters.paddleocr_adapter import PaddleOCRAdapter
 from app.adapters.mistral_adapter import MistralOCRAdapter
 from app.adapters.gemini3_adapter import Gemini3Adapter
 from app.adapters.gemini3pro_adapter import Gemini3ProAdapter
